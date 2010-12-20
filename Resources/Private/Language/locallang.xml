@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Extbase tt_news extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_extbasenews_domain_model_news">a news entry</label>
+			<label index="tx_extbasenews_domain_model_news.title">the title</label>
+			<label index="tx_extbasenews_domain_model_news.subtitle">the subtitle</label>
+			<label index="tx_extbasenews_domain_model_news.teaser">a longer version of a subtitle</label>
+			<label index="tx_extbasenews_domain_model_news.bodytext">the main content of the news entry</label>
+			<label index="tx_extbasenews_domain_model_news.links">references to other websites</label>
+			<label index="tx_extbasenews_domain_model_news.date">the date the news entry relates to</label>
+			<label index="tx_extbasenews_domain_model_news.archive_date">the date until the news entry shall be shown</label>
+			<label index="tx_extbasenews_domain_model_news.author_name">the name of the news author(s)</label>
+			<label index="tx_extbasenews_domain_model_news.author_email">the email address(es) of the news author</label>
+			<label index="tx_extbasenews_domain_model_news.image_url">the URL of the image(s)</label>
+			<label index="tx_extbasenews_domain_model_news.image_caption">the caption used for the image(s)</label>
+			<label index="tx_extbasenews_domain_model_news.image_alt_text">the alt-text used for the image(s)</label>
+			<label index="tx_extbasenews_domain_model_news.image_title_text">the title-text used for the image(s)</label>
+			<label index="tx_extbasenews_domain_model_news.file_url">the url of the file(s)</label>
+			<label index="tx_extbasenews_domain_model_news.file_title">the title used for the file(s)</label>
+			<label index="tx_extbasenews_domain_model_news.file_caption">the caption used for the file(s)</label>
+			<label index="tx_extbasenews_domain_model_news.parent">parent</label>
+			<label index="tx_extbasenews_domain_model_news.category">category</label>
+			<label index="tx_extbasenews_domain_model_news.related_news">relatedNews</label>
+			<label index="tx_extbasenews_domain_model_categorie">a category</label>
+			<label index="tx_extbasenews_domain_model_categorie.title">the title</label>
+			<label index="tx_extbasenews_domain_model_categorie.description">the description</label>
+			<label index="tx_extbasenews_domain_model_categorie.image">the category image or icon</label>
+			<label index="tx_extbasenews_domain_model_categorie.shortcut">the page or url the categorie is linked to</label>
+			<label index="tx_extbasenews_domain_model_categorie.singe_view_page">the page where news entries of this category will be shown</label>
+			<label index="tx_extbasenews_domain_model_categorie.parent">parent</label>
+		</languageKey>
+	</data>
+</T3locallang>

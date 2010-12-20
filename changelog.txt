@@ -1,0 +1,3 @@
+version 0.0.1 (work in progress)
+- basic TCA
+- basic structure using kickstarter

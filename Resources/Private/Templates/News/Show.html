@@ -1,0 +1,80 @@
+<f:layout name="default" />
+
+This Template is responsible for creating a single view for a domain object
+
+<f:section name="main">
+<h1>Single View for News</h1>
+
+<f:flashMessages />
+
+<table>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.title" /></td>
+		<td>{news.title}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.subtitle" /></td>
+		<td>{news.subtitle}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.teaser" /></td>
+		<td>{news.teaser}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.bodytext" /></td>
+		<td>{news.bodytext}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.links" /></td>
+		<td>{news.links}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.date" /></td>
+		<td>{news.date}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.archive_date" /></td>
+		<td>{news.archiveDate}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.author_name" /></td>
+		<td>{news.authorName}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.author_email" /></td>
+		<td>{news.authorEmail}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.image_url" /></td>
+		<td>{news.imageUrl}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.image_caption" /></td>
+		<td>{news.imageCaption}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.image_alt_text" /></td>
+		<td>{news.imageAltText}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.image_title_text" /></td>
+		<td>{news.imageTitleText}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.file_url" /></td>
+		<td>{news.fileUrl}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.file_title" /></td>
+		<td>{news.fileTitle}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_extbasenews_domain_model_news.file_caption" /></td>
+		<td>{news.fileCaption}</td>
+	</tr>
+</table>
+<f:link.action action="edit" arguments="{news : news}">Edit</f:link.action>
+<f:link.action action="delete" arguments="{news : news}">Delete</f:link.action>
+
+<f:link.action action="index">Back to listing</f:link.action>
+</f:section>

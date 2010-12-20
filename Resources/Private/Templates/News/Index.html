@@ -1,0 +1,57 @@
+<f:layout name="default" />
+
+This Template is responsible for creating a table of domain objects.
+
+<f:section name="main">
+<h1>Listing for News</h1>
+
+<f:flashMessages />
+
+<table>
+	<tr>
+		<th><f:translate key="tx_extbasenews_domain_model_news.title" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.subtitle" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.teaser" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.bodytext" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.links" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.date" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.archive_date" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.author_name" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.author_email" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.image_url" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.image_caption" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.image_alt_text" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.image_title_text" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.file_url" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.file_title" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_news.file_caption" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{news}" as="news">
+		<tr>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.title}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.subtitle}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.teaser}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.bodytext}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.links}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.date}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.archiveDate}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.authorName}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.authorEmail}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.imageUrl}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.imageCaption}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.imageAltText}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.imageTitleText}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.fileUrl}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.fileTitle}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{news : news}"> {news.fileCaption}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{news : news}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{news : news}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New News</f:link.action>
+</f:section>

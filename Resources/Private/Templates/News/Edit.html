@@ -1,0 +1,47 @@
+<f:layout name="default" />
+
+This template displays a EDIT form for the current domain object.
+
+<f:section name="main">
+<h1>Edit News</h1>
+
+<f:flashMessages />
+
+<f:render partial="formErrors" />
+
+<f:form method="post" action="update" name="news" object="{news}">
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.title" /></label><br />
+	<f:form.textbox property="title" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.subtitle" /></label><br />
+	<f:form.textbox property="subtitle" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.teaser" /></label><br />
+	<f:form.textbox property="teaser" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.bodytext" /></label><br />
+	<f:form.textbox property="bodytext" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.links" /></label><br />
+	<f:form.textbox property="links" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.date" /></label><br />
+	<f:form.textbox property="date" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.archive_date" /></label><br />
+	<f:form.textbox property="archiveDate" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.author_name" /></label><br />
+	<f:form.textbox property="authorName" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.author_email" /></label><br />
+	<f:form.textbox property="authorEmail" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.image_url" /></label><br />
+	<f:form.textbox property="imageUrl" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.image_caption" /></label><br />
+	<f:form.textbox property="imageCaption" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.image_alt_text" /></label><br />
+	<f:form.textbox property="imageAltText" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.image_title_text" /></label><br />
+	<f:form.textbox property="imageTitleText" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.file_url" /></label><br />
+	<f:form.textbox property="fileUrl" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.file_title" /></label><br />
+	<f:form.textbox property="fileTitle" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.file_caption" /></label><br />
+	<f:form.textbox property="fileCaption" /><br />
+	<f:form.submit value="Edit" />
+</f:form>
+</f:section>

@@ -1,0 +1,35 @@
+<f:layout name="default" />
+
+This Template is responsible for creating a table of domain objects.
+
+<f:section name="main">
+<h1>Listing for Categorie</h1>
+
+<f:flashMessages />
+
+<table>
+	<tr>
+		<th><f:translate key="tx_extbasenews_domain_model_categorie.title" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_categorie.description" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_categorie.image" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_categorie.shortcut" /></th>
+		<th><f:translate key="tx_extbasenews_domain_model_categorie.singe_view_page" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{categories}" as="categorie">
+		<tr>
+			<td><f:link.action action="show" arguments="{categorie : categorie}"> {categorie.title}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{categorie : categorie}"> {categorie.description}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{categorie : categorie}"> {categorie.image}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{categorie : categorie}"> {categorie.shortcut}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{categorie : categorie}"> {categorie.singeViewPage}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{categorie : categorie}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{categorie : categorie}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New Categorie</f:link.action>
+</f:section>

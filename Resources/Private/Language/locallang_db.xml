@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'extbasenews'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_extbasenews_domain_model_news">News</label>
+			<label index="tx_extbasenews_domain_model_news.title">Title</label>
+			<label index="tx_extbasenews_domain_model_news.subtitle">Subtitle</label>
+			<label index="tx_extbasenews_domain_model_news.teaser">Teaser</label>
+			<label index="tx_extbasenews_domain_model_news.bodytext">Bodytext</label>
+			<label index="tx_extbasenews_domain_model_news.links">Links</label>
+			<label index="tx_extbasenews_domain_model_news.date">Date</label>
+			<label index="tx_extbasenews_domain_model_news.archive_date">Archive Date</label>
+			<label index="tx_extbasenews_domain_model_news.author_name">Author Name</label>
+			<label index="tx_extbasenews_domain_model_news.author_email">Author Email</label>
+			<label index="tx_extbasenews_domain_model_news.image_url">Image Url</label>
+			<label index="tx_extbasenews_domain_model_news.image_caption">Image Caption</label>
+			<label index="tx_extbasenews_domain_model_news.image_alt_text">Image Alt Text</label>
+			<label index="tx_extbasenews_domain_model_news.image_title_text">Image Title Text</label>
+			<label index="tx_extbasenews_domain_model_news.file_url">File Url</label>
+			<label index="tx_extbasenews_domain_model_news.file_title">File Title</label>
+			<label index="tx_extbasenews_domain_model_news.file_caption">File Caption</label>
+			<label index="tx_extbasenews_domain_model_news.parent">Parent</label>
+			<label index="tx_extbasenews_domain_model_news.category">Category</label>
+			<label index="tx_extbasenews_domain_model_news.related_news">Related News</label>
+			<label index="tx_extbasenews_domain_model_categorie">Categorie</label>
+			<label index="tx_extbasenews_domain_model_categorie.title">Title</label>
+			<label index="tx_extbasenews_domain_model_categorie.description">Description</label>
+			<label index="tx_extbasenews_domain_model_categorie.image">Image</label>
+			<label index="tx_extbasenews_domain_model_categorie.shortcut">Shortcut</label>
+			<label index="tx_extbasenews_domain_model_categorie.singe_view_page">Singe View Page</label>
+			<label index="tx_extbasenews_domain_model_categorie.parent">Parent</label>
+		</languageKey>
+	</data>
+</T3locallang>

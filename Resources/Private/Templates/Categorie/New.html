@@ -1,0 +1,25 @@
+<f:layout name="default" />
+
+This template displays a NEW form for the current domain object.
+
+<f:section name="main">
+<h1>New Categorie</h1>
+
+<f:flashMessages />
+
+<f:render partial="formErrors" />
+
+<f:form method="post" action="create" name="newCategorie" object="{newCategorie}">
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_categorie.title" /></label><br />
+	<f:form.textbox property="title" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_categorie.description" /></label><br />
+	<f:form.textbox property="description" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_categorie.image" /></label><br />
+	<f:form.textbox property="image" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_categorie.shortcut" /></label><br />
+	<f:form.textbox property="shortcut" /><br />
+	<label for="title"><f:translate key="tx_extbasenews_domain_model_categorie.singe_view_page" /></label><br />
+	<f:form.textbox property="singeViewPage" /><br />
+	<f:form.submit value="Create new" />
+</f:form>
+</f:section>
