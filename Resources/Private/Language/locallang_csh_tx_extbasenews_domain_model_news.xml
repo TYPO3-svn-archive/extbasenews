@@ -7,25 +7,25 @@
     </meta>
     <data type="array">
         <languageKey index="default" type="array">
-			<label index="title.description">the title</label>
-			<label index="subtitle.description">the subtitle</label>
-			<label index="teaser.description">a longer version of a subtitle</label>
-			<label index="bodytext.description">the main content of the news entry</label>
-			<label index="links.description">references to other websites</label>
-			<label index="date.description">the date the news entry relates to</label>
-			<label index="archive_date.description">the date until the news entry shall be shown</label>
-			<label index="author_name.description">the name of the news author(s)</label>
-			<label index="author_email.description">the email address(es) of the news author</label>
-			<label index="image_url.description">the URL of the image(s)</label>
-			<label index="image_caption.description">the caption used for the image(s)</label>
-			<label index="image_alt_text.description">the alt-text used for the image(s)</label>
-			<label index="image_title_text.description">the title-text used for the image(s)</label>
-			<label index="file_url.description">the url of the file(s)</label>
-			<label index="file_title.description">the title used for the file(s)</label>
-			<label index="file_caption.description">the caption used for the file(s)</label>
-			<label index="parent.description">parent</label>
-			<label index="category.description">category</label>
-			<label index="related_news.description">relatedNews</label>
+			<label index="title.description">The title</label>
+			<label index="subtitle.description">The subtitle</label>
+			<label index="teaser.description">A longer version of the subtitle</label>
+			<label index="bodytext.description">The main content of the news entry</label>
+			<label index="links.description">References to other websites</label>
+			<label index="date.description">The date the news entry relates to</label>
+			<label index="archive_date.description">The date until the news entry shall be shown</label>
+			<label index="author_name.description">The name of the news author(s)</label>
+			<label index="author_email.description">The email address(es) of the news author</label>
+			<label index="image_url.description">The URL of the image(s)</label>
+			<label index="image_caption.description">The caption used for the image(s)</label>
+			<label index="image_alt_text.description">The alt-text used for the image(s)</label>
+			<label index="image_title_text.description">The title-text used for the image(s)</label>
+			<label index="file_url.description">The url of the file(s)</label>
+			<label index="file_title.description">The title used for the file(s)</label>
+			<label index="file_caption.description">The caption used for the file(s)</label>
+			<label index="parent.description">The parent news item</label>
+			<label index="category.description">The category(s) the news item relates to</label>
+			<label index="related_news.description">Related News</label>
 		</languageKey>
     </data>
 </T3locallang>

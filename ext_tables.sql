@@ -3,7 +3,8 @@ CREATE TABLE tx_extbasenews_domain_model_news (
 	pid int(11) DEFAULT '0' NOT NULL,
 	
 	news int(11) unsigned DEFAULT '0' NOT NULL,
-	
+
+	type tinyint(4) DEFAULT '0' NOT NULL,
 	title varchar(255) DEFAULT '' NOT NULL,
 	title_link varchar(255) DEFAULT '' NOT NULL,
 	subtitle text NOT NULL,
@@ -29,6 +30,9 @@ CREATE TABLE tx_extbasenews_domain_model_news (
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
 	deleted tinyint(4) unsigned DEFAULT '0' NOT NULL,
 	hidden tinyint(4) unsigned DEFAULT '0' NOT NULL,
+	starttime int(11) unsigned DEFAULT '0' NOT NULL,
+	endtime int(11) unsigned DEFAULT '0' NOT NULL,
+	fe_group varchar(100) DEFAULT '' NOT NULL,
 
 	t3ver_oid int(11) DEFAULT '0' NOT NULL,
 	t3ver_id int(11) DEFAULT '0' NOT NULL,
