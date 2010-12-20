@@ -5,6 +5,7 @@ CREATE TABLE tx_extbasenews_domain_model_news (
 	news int(11) unsigned DEFAULT '0' NOT NULL,
 	
 	title varchar(255) DEFAULT '' NOT NULL,
+	title_link varchar(255) DEFAULT '' NOT NULL,
 	subtitle text NOT NULL,
 	teaser text NOT NULL,
 	bodytext text NOT NULL,
