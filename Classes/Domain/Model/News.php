@@ -31,7 +31,15 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 class Tx_Extbasenews_Domain_Model_News extends Tx_Extbase_DomainObject_AbstractEntity {
-	
+
+
+    /**
+     * the type (e.g. normal, internal, external)
+     * @var int
+     * @validate NotEmpty
+     */
+    protected $type;
+    
 	/**
 	 * the title
 	 * @var string
@@ -146,12 +154,52 @@ class Tx_Extbasenews_Domain_Model_News extends Tx_Extbase_DomainObject_AbstractE
 	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_Extbasenews_Domain_Model_News>
 	 */
 	protected $relatedNews;
+
+    /**
+     * the start time from which on it will be available
+     * @var integer
+     */
+    protected $starttime;
+
+    /**
+     * the end time until it will be available
+     * @var integer
+     */
+    protected $endtime;
+
+    /**
+     * the FE-Groups which have access to this item
+     * @var string
+     */
+    protected $feGroup;
+
 	/**
 	 * The constructor. Initializes all Tx_Extbase_Persistence_ObjectStorage instances.
 	 */
 	public function __construct() {
 		$this->parent = new Tx_Extbase_Persistence_ObjectStorage();
 	}
+
+    /**
+     * Setter for type
+     *
+     * @param  int $type the type
+     * @return Tx_Extbasenews_Domain_Model_News
+     */
+    public function setType($type) {
+        $this->type = $type;
+        return $this;
+    }
+
+    /**
+     * Getter for type
+     *
+     * @return string
+     */
+    public function getType() {
+        return $this->title;
+    }
+
 	/**
 	 * Setter for title
 	 *
@@ -591,6 +639,65 @@ class Tx_Extbasenews_Domain_Model_News extends Tx_Extbase_DomainObject_AbstractE
 	public function removeRelatedNews(Tx_Extbasenews_Domain_Model_News $relatedNews) {
 		$this->relatedNews->detach($relatedNews);
 	}
-	
+
+    /**
+	 * Setter for starttime
+	 *
+	 * @param string $starttime the name of the news author(s)
+	 * @return Tx_Extbasenews_Domain_Model_News
+	 */
+	public function setStarttime($starttime) {
+		$this->starttime = $starttime;
+		return $this;
+	}
+
+	/**
+	 * Getter for starttime
+	 *
+	 * @return string the name of the news author(s)
+	 */
+	public function getStarttime() {
+		return $this->starttime;
+	}
+    
+    /**
+	 * Setter for endtime
+	 *
+	 * @param string $endtime the name of the news author(s)
+	 * @return Tx_Extbasenews_Domain_Model_News
+	 */
+	public function setEndtime($endtime) {
+		$this->endtime = $endtime;
+		return $this;
+	}
+
+	/**
+	 * Getter for endtime
+	 *
+	 * @return string the name of the news author(s)
+	 */
+	public function getEndtime() {
+		return $this->endtime;
+	}
+
+    /**
+	 * Setter for feGroup
+	 *
+	 * @param string $feGroup the name of the news author(s)
+	 * @return Tx_Extbasenews_Domain_Model_News
+	 */
+	public function setFeGroup($feGroup) {
+		$this->feGroup = $feGroup;
+		return $this;
+	}
+
+	/**
+	 * Getter for feGroup
+	 *
+	 * @return string the name of the news author(s)
+	 */
+	public function getFeGroup() {
+		return $this->feGroup;
+	}
 }
 ?>
