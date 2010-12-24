@@ -12,6 +12,8 @@ This template displays a NEW form for the current domain object.
 <f:form method="post" action="create" name="newNews" object="{newNews}">
 	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.title" /></label><br />
 	<f:form.textbox property="title" /><br />
+    <label for="type"><f:translate key="tx_extbasenews_domain_model_news.type" /></label><br />
+	<f:form.textbox property="type" /><br />
 	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.subtitle" /></label><br />
 	<f:form.textbox property="subtitle" /><br />
 	<label for="title"><f:translate key="tx_extbasenews_domain_model_news.teaser" /></label><br />

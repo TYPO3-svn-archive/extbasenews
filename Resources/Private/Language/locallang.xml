@@ -8,6 +8,7 @@
 		<languageKey index="default" type="array">
 			<label index="tx_extbasenews_domain_model_news">a news entry</label>
 			<label index="tx_extbasenews_domain_model_news.title">the title</label>
+			<label index="tx_extbasenews_domain_model_news.type">The type (0 = normal, 1 = internal link, 2 = external link)</label>
 			<label index="tx_extbasenews_domain_model_news.subtitle">the subtitle</label>
 			<label index="tx_extbasenews_domain_model_news.teaser">a longer version of a subtitle</label>
 			<label index="tx_extbasenews_domain_model_news.bodytext">the main content of the news entry</label>
