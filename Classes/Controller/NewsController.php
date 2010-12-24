@@ -30,7 +30,6 @@
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-// TODO: As your extension matures, you should use Tx_Extbase_MVC_Controller_ActionController as base class, instead of the ScaffoldingController used below.
 class Tx_Extbasenews_Controller_NewsController extends Tx_Extbase_MVC_Controller_ActionController {
 	
 	/**
@@ -51,7 +50,7 @@ class Tx_Extbasenews_Controller_NewsController extends Tx_Extbase_MVC_Controller
 	 */
 	public function indexAction() {
 		$news = $this->newsRepository->findAll();
-		$this->view->assign('news', $news);
+        $this->view->assign('news', $news);
 	}
 
 	/**
@@ -115,9 +114,9 @@ class Tx_Extbasenews_Controller_NewsController extends Tx_Extbase_MVC_Controller
 		$this->flashMessageContainer->add('Your News was removed.');
 		$this->redirect('index');
 	}
-	
 
-	
+
+
 	/**
 	 * list action
 	 *

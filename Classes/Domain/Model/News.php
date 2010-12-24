@@ -75,7 +75,7 @@ class Tx_Extbasenews_Domain_Model_News extends Tx_Extbase_DomainObject_AbstractE
 	 * the date the news entry relates to
 	 * @var integer
 	 */
-	protected $date;
+	protected $datetime;
 	
 	/**
 	 * the date until the news entry shall be shown
@@ -288,8 +288,8 @@ class Tx_Extbasenews_Domain_Model_News extends Tx_Extbase_DomainObject_AbstractE
 	 * @param integer $date the date the news entry relates to
 	 * @return Tx_Extbasenews_Domain_Model_News
 	 */
-	public function setDate($date) {
-		$this->date = $date;
+	public function setDatetime($datetime) {
+		$this->datetime = $datetime;
 		return $this;
 	}
 
@@ -298,8 +298,8 @@ class Tx_Extbasenews_Domain_Model_News extends Tx_Extbase_DomainObject_AbstractE
 	 *
 	 * @return integer the date the news entry relates to
 	 */
-	public function getDate() {
-		return $this->date;
+	public function getDatetime() {
+		return $this->datetime;
 	}
 	
 	/**

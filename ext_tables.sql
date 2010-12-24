@@ -11,7 +11,7 @@ CREATE TABLE tx_extbasenews_domain_model_news (
 	teaser text NOT NULL,
 	bodytext text NOT NULL,
 	links varchar(255) DEFAULT '' NOT NULL,
-	date int(11) DEFAULT '0' NOT NULL,
+	datetime int(11) DEFAULT '0' NOT NULL,
 	archive_date int(11) DEFAULT '0' NOT NULL,
 	author_name varchar(255) DEFAULT '' NOT NULL,
 	author_email varchar(255) DEFAULT '' NOT NULL,
