@@ -155,24 +155,6 @@ class Tx_Extbasenews_Domain_Model_News extends Tx_Extbase_DomainObject_AbstractE
 	 */
 	protected $relatedNews;
 
-    /**
-     * the start time from which on it will be available
-     * @var integer
-     */
-    protected $starttime;
-
-    /**
-     * the end time until it will be available
-     * @var integer
-     */
-    protected $endtime;
-
-    /**
-     * the FE-Groups which have access to this item
-     * @var string
-     */
-    protected $feGroup;
-
 	/**
 	 * The constructor. Initializes all Tx_Extbase_Persistence_ObjectStorage instances.
 	 */
@@ -197,7 +179,7 @@ class Tx_Extbasenews_Domain_Model_News extends Tx_Extbase_DomainObject_AbstractE
      * @return string
      */
     public function getType() {
-        return $this->title;
+        return $this->type;
     }
 
 	/**
@@ -640,64 +622,5 @@ class Tx_Extbasenews_Domain_Model_News extends Tx_Extbase_DomainObject_AbstractE
 		$this->relatedNews->detach($relatedNews);
 	}
 
-    /**
-	 * Setter for starttime
-	 *
-	 * @param string $starttime the name of the news author(s)
-	 * @return Tx_Extbasenews_Domain_Model_News
-	 */
-	public function setStarttime($starttime) {
-		$this->starttime = $starttime;
-		return $this;
-	}
-
-	/**
-	 * Getter for starttime
-	 *
-	 * @return string the name of the news author(s)
-	 */
-	public function getStarttime() {
-		return $this->starttime;
-	}
-    
-    /**
-	 * Setter for endtime
-	 *
-	 * @param string $endtime the name of the news author(s)
-	 * @return Tx_Extbasenews_Domain_Model_News
-	 */
-	public function setEndtime($endtime) {
-		$this->endtime = $endtime;
-		return $this;
-	}
-
-	/**
-	 * Getter for endtime
-	 *
-	 * @return string the name of the news author(s)
-	 */
-	public function getEndtime() {
-		return $this->endtime;
-	}
-
-    /**
-	 * Setter for feGroup
-	 *
-	 * @param string $feGroup the name of the news author(s)
-	 * @return Tx_Extbasenews_Domain_Model_News
-	 */
-	public function setFeGroup($feGroup) {
-		$this->feGroup = $feGroup;
-		return $this;
-	}
-
-	/**
-	 * Getter for feGroup
-	 *
-	 * @return string the name of the news author(s)
-	 */
-	public function getFeGroup() {
-		return $this->feGroup;
-	}
 }
 ?>

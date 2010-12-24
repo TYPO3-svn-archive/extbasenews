@@ -10,7 +10,7 @@ Tx_Extbase_Utility_Extension::configurePlugin(
 		'News' => 'index, show, new, create, edit, update, delete','Categorie' => 'index, show, new, create, edit, update, delete',
 	),
 	array(
-		'News' => 'create, update, delete','Categorie' => 'create, update, delete',
+		'News' => 'create, show, update, delete','Categorie' => 'create, update, delete',
 	)
 );
 
