@@ -223,7 +223,7 @@ $TCA['tx_extbasenews_domain_model_news'] = array(
 		),
 		'datetime' => array(
 			'exclude'	=> 1,
-			'label'		=> 'LLL:EXT:extbasenews/Resources/Private/Language/locallang_db.xml:tx_extbasenews_domain_model_news.date',
+			'label'		=> 'LLL:EXT:extbasenews/Resources/Private/Language/locallang_db.xml:tx_extbasenews_domain_model_news.datetime',
 			'config'	=> array(
 				'type' => 'input',
 				'size' => 12,

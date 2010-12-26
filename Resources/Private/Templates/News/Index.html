@@ -4,30 +4,18 @@ This Template is responsible for creating a table of domain objects.
 
 <f:section name="main">
 
-<f:flashMessages />
+    <f:flashMessages />
 
-<table>
-	<tr>
-		<th><f:translate key="tx_extbasenews_domain_model_news.title" /></th>
-		<th><f:translate key="tx_extbasenews_domain_model_news.subtitle" /></th>
-		<th><f:translate key="tx_extbasenews_domain_model_news.teaser" /></th>
-		<th><f:translate key="tx_extbasenews_domain_model_news.bodytext" /></th>
-        <th>Edit</th>
-        <th>Delete</th>
-	</tr>
-
-	<f:for each="{news}" as="news">
-		<tr>
-			<td><f:link.action action="show" arguments="{news : news}"> {news.title}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{news : news}"> {news.subtitle}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{news : news}"> {news.teaser}</f:link.action></td>
-			<td><f:link.action action="show" arguments="{news : news}"> {news.bodytext}</f:link.action></td>
-			<td><f:link.action action="edit" arguments="{news : news}">Edit</f:link.action></td>
-			<td><f:link.action action="delete" arguments="{news : news}">Delete</f:link.action></td>
-		</tr>
-	</f:for>
-</table>
-
-<f:link.action action="new">Create New</f:link.action>
+    <div class="extbasenews-list">
+        <f:for each="{news}" as="news">
+            <div class="extbasenews-list-single">
+                <h4 class="extbasenews-list-single-title">
+                    <f:link.action action="show" arguments="{news : news}">{news.title}</f:link.action>
+                </h4>
+                <span class="extbasenews-list-single-datetime">
+                    <f:translate key="tx_extbasenews_domain_model_news.datetime" />{news.datetime}</span>
+            </div>
+        </f:for>
+    </div>
 
 </f:section>

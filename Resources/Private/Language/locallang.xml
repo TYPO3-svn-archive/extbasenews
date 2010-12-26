@@ -13,7 +13,7 @@
 			<label index="tx_extbasenews_domain_model_news.teaser">a longer version of a subtitle</label>
 			<label index="tx_extbasenews_domain_model_news.bodytext">the main content of the news entry</label>
 			<label index="tx_extbasenews_domain_model_news.links">references to other websites</label>
-			<label index="tx_extbasenews_domain_model_news.date">the date the news entry relates to</label>
+			<label index="tx_extbasenews_domain_model_news.datetime">the date the news entry relates to</label>
 			<label index="tx_extbasenews_domain_model_news.archive_date">the date until the news entry shall be shown</label>
 			<label index="tx_extbasenews_domain_model_news.author_name">the name of the news author(s)</label>
 			<label index="tx_extbasenews_domain_model_news.author_email">the email address(es) of the news author</label>

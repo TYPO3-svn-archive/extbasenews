@@ -12,7 +12,7 @@
 			<label index="teaser.description">A longer version of the subtitle</label>
 			<label index="bodytext.description">The main content of the news entry</label>
 			<label index="links.description">References to other websites</label>
-			<label index="date.description">The date the news entry relates to</label>
+			<label index="datetime.description">The date the news entry relates to</label>
 			<label index="archive_date.description">The date until the news entry shall be shown</label>
 			<label index="author_name.description">The name of the news author(s)</label>
 			<label index="author_email.description">The email address(es) of the news author</label>

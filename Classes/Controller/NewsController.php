@@ -114,16 +114,5 @@ class Tx_Extbasenews_Controller_NewsController extends Tx_Extbase_MVC_Controller
 		$this->flashMessageContainer->add('Your News was removed.');
 		$this->redirect('index');
 	}
-
-
-
-	/**
-	 * list action
-	 *
-	 * @return string The rendered list action
-	 */
-	public function listAction() {
-	}
-	
 }
 ?>

@@ -12,7 +12,7 @@
 			<label index="tx_extbasenews_domain_model_news.teaser">Teaser</label>
 			<label index="tx_extbasenews_domain_model_news.bodytext">Bodytext</label>
 			<label index="tx_extbasenews_domain_model_news.links">Links</label>
-			<label index="tx_extbasenews_domain_model_news.date">News Date</label>
+			<label index="tx_extbasenews_domain_model_news.datetime">News Date</label>
 			<label index="tx_extbasenews_domain_model_news.archive_date">Archive Date</label>
 			<label index="tx_extbasenews_domain_model_news.author_name">Author Name</label>
 			<label index="tx_extbasenews_domain_model_news.author_email">Author Email</label>
