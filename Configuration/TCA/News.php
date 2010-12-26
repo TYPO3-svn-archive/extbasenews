@@ -6,10 +6,10 @@ if (!defined ('TYPO3_MODE')) {
 $TCA['tx_extbasenews_domain_model_news'] = array(
 	'ctrl' => $TCA['tx_extbasenews_domain_model_news']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList'	=> 'type,title,title_link,subtitle,teaser,bodytext,links,date,archive_date,author_name,author_email,image_url,image_caption,image_alt_text,image_title_text,file_url,file_title,file_caption,parent,category,related_news,starttime,endtime,fe_group',
+		'showRecordFieldList'	=> 'type,title,title_link,subtitle,teaser,bodytext,links,datetime,archive_date,author_name,author_email,image_url,image_caption,image_alt_text,image_title_text,file_url,file_title,file_caption,parent,category,related_news,starttime,endtime,fe_group',
 	),
 	'types' => array(
-		'1' => array('showitem'	=> 'type,title,title_link,subtitle,teaser;;;richtext:rte_transform[flag=rte_enabled|mode=ts];4-4-4,bodytext;;;richtext:rte_transform[flag=rte_enabled|mode=ts];4-4-4,links,date,archive_date,author_name,author_email,image_url,image_caption,image_alt_text,image_title_text,file_url,file_title,file_caption,parent,category,related_news,starttime,endtime,fe_group'),
+		'1' => array('showitem'	=> 'type,title,title_link,subtitle,teaser;;;richtext:rte_transform[flag=rte_enabled|mode=ts];4-4-4,bodytext;;;richtext:rte_transform[flag=rte_enabled|mode=ts];4-4-4,links,datetime,archive_date,author_name,author_email,image_url,image_caption,image_alt_text,image_title_text,file_url,file_title,file_caption,parent,category,related_news,starttime,endtime,fe_group'),
 	),
 	'palettes' => array(
 		'1' => array('showitem'	=> ''),
@@ -221,7 +221,7 @@ $TCA['tx_extbasenews_domain_model_news'] = array(
 				'eval' => 'trim'
 			),
 		),
-		'date' => array(
+		'datetime' => array(
 			'exclude'	=> 1,
 			'label'		=> 'LLL:EXT:extbasenews/Resources/Private/Language/locallang_db.xml:tx_extbasenews_domain_model_news.date',
 			'config'	=> array(
