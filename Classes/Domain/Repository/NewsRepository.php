@@ -30,5 +30,12 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 class Tx_Extbasenews_Domain_Repository_NewsRepository extends Tx_Extbase_Persistence_Repository {
+
+    function findAll() {
+        $temp = parent::findAll();
+        print_r($temp->getFirst);
+        print_r("test");
+        return $temp;
+    }
 }
 ?>
