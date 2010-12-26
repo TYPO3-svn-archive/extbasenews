@@ -351,7 +351,7 @@ $TCA['tx_extbasenews_domain_model_news'] = array(
 			'config'	=> array(
 				'type' => 'select',
 				'foreign_table' => 'tx_extbasenews_domain_model_news',
-				'foreign_field' => 'news',
+				'foreign_field' => 'uid',
 				'size' => 10,
 				'autoSizeMax' => 30,
 				'maxitems' => 9999,
@@ -450,11 +450,6 @@ $TCA['tx_extbasenews_domain_model_news'] = array(
 						'script' => 'wizard_add.php',
 					),
 				),
-			),
-		),
-		'news' => array(
-			'config' => array(
-				'type'	=> 'passthrough',
 			),
 		),
 	),
